@@ -1,4 +1,4 @@
-const response = [
+export const response = [
     {
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/16581',
       es: {
@@ -70,6 +70,5 @@ const response = [
         description: 'Omnivorous farm mammal that has a heavy body with a generally pink color and a short, curved tail, raised mainly for its meat',
       }
     }
-]
+];
 
-export default response;
