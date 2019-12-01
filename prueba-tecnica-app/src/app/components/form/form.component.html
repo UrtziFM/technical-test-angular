@@ -1,0 +1,24 @@
+<form [formGroup]="wordForm" (ngSubmit)="onFormSubmit(wordForm.value)">
+    <label for="image">
+      <p>Image</p>
+      <input type="text" id="image" formControlName="image" />
+    </label>
+    <label for="nameEs">
+      <p>Spanish Name</p>
+      <input type="text" id="nameEs" formControlName="nameEs" />
+    </label>
+    <label for="definitionEs">
+      <p>Spanish definition</p>
+      <input type="text" id="definitionEs" formControlName="definitionEs" />
+    </label>
+    <label for="nameEn">
+      <p>English name</p>
+      <input type="text" id="nameEn" formControlName="nameEn" />
+    </label>
+    <label for="definitionEn">
+      <p>English definition</p>
+      <input type="text" id="definitionEn" formControlName="definitionEn" />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  

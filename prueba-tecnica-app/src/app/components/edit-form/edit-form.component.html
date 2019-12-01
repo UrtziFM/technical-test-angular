@@ -1,0 +1,13 @@
+<h2>Edit an existing word</h2>
+<div *ngIf="word">
+  <app-form
+    [id]="word.id"
+    [image]="word.image"
+    [nameEs]="word.es.name"
+    [definitionEs]="word.es.definition"
+    [nameEn]="word.en.name"
+    [definitionEn]="word.en.definition"
+    (formHandler)="onFormSubmit($event)"
+  ></app-form>
+</div>
+

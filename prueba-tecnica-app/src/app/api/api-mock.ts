@@ -1,5 +1,8 @@
-export const response = [
+import { IWords } from './../interfaces/api.interface';
+
+const response: IWords[] = [
     {
+      id: 0,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/16581',
       es: {
         name: 'perro',
@@ -12,6 +15,7 @@ export const response = [
       }
     },
     {
+      id: 1,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/25818',
       es: {
         name: 'gato',
@@ -23,6 +27,7 @@ export const response = [
       }
     },
     {
+      id: 2,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/14443',
       es: {
         name: 'vaca',
@@ -35,6 +40,7 @@ export const response = [
       }
     },
     {
+      id: 3,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/24749',
       es: {
         name: 'toro',
@@ -47,6 +53,7 @@ export const response = [
       }
     },
     {
+      id: 4,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/16077',
       es: {
         name: 'caballo',
@@ -59,6 +66,7 @@ export const response = [
       }
     },
     {
+      id: 5,
       image: 'https://wl1media.s3-eu-west-1.amazonaws.com/v_20190807/images_w/pairs/13450',
       es: {
         name: 'cerdo',
@@ -72,3 +80,6 @@ export const response = [
     }
 ];
 
+export const getApiResponse = async (): Promise<IWords[]> => {
+  return response;
+}
