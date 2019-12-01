@@ -1,0 +1,22 @@
+<div class="list__container">
+    <ul *ngIf="words.length">
+      <li class="list__element" *ngFor="let word of words">
+        <div class="list__media">
+          <img [src]="word.image" [alt]="word.es.name" />
+          <div class="list__media-buttons">
+            <a class="list__media-buttons--edit" [routerLink]="['/edit', word.id]">Edit word</a>
+            <button class="list__media-buttons--danger" type="button" (click)="onClickDeleteWord(word.id)">Delete word</button>
+          </div>
+        </div>
+        <div class="list__article">
+          <h3>In Spanish</h3>
+          <p><b>Name:</b> {{ word.es.name }}</p>
+          <p><b>Definition:</b> {{ word.es.definition }}</p>
+          <h3>In English</h3>
+          <p><b>Name:</b> {{ word.en.name }}</p>
+          <p><b>Definition:</b> {{ word.en.definition }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

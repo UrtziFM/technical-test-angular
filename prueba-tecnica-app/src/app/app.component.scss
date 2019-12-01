@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  
+    &__title {
+      margin-right: 1rem;
+    }
+  
+    &__link {
+      color: #000;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-right: 0.5rem;
+  
+      &:hover, &:focus {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  
